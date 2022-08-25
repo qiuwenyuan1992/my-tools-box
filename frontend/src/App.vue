@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <!--引入路由-->
-    <router-view />
-  </div>
+	<router-view />
 </template>
+
 <style>
+@import './assets/css/main.css';
+@import './assets/css/color-dark.css';
 </style>
