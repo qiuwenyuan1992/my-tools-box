@@ -176,13 +176,14 @@ func normalize(m map[string]interface{}) map[string]interface{} {
 	}
 	return res
 }
-
+// applyKeys 批量替换
 func applyKeys(m map[string]interface{}, list []string) {
 	for _, k := range list {
 		applyKey(m, k)
 	}
 }
 
+// applyKey 替换Key的名称
 func applyKey(m map[string]interface{}, key string) {
 	for k, v := range m {
 		if casted, ok := v.(map[string]interface{}); ok {
